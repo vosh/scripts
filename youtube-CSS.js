@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name          vOSH Youtube 2013
+// @name          vosh dark youtube
 // @namespace     github.com/vosh
 // @description	  dark youtube theme
-// @author        vOSH
+// @author        vosh
 // @homepage      github.com/vosh
 // @include       http://youtube.com/*
 // @include       https://youtube.com/*
