@@ -42,7 +42,7 @@ while read -r line ; do
                                 # focused occupied desktop
                                 FG=$COLOR_FOCUSED_OCCUPIED_FG
                                 BG=$COLOR_FOCUSED_OCCUPIED_BG
-                                INFO='°'
+                                INFO=' ^p(-2;-1)^ro(3x3)^p()'
                                 ;;
                             F*)
                                 # focused free desktop
@@ -54,13 +54,13 @@ while read -r line ; do
                                 # focused urgent desktop
                                 FG=$COLOR_FOCUSED_URGENT_FG
                                 BG=$COLOR_FOCUSED_URGENT_BG
-                                INFO='!'
+                                INFO=' !'
                                 ;;
                             o*)
                                 # occupied desktop
                                 FG=$COLOR_OCUPPIED_FG
                                 BG=$COLOR_OCUPPIED_BG
-                                INFO='°'
+                                INFO=' ^p(-2;-1)^ro(3x3)^p()'
                                 ;;
                             f*)
                                 # free desktop
@@ -72,7 +72,7 @@ while read -r line ; do
                                 # urgent desktop
                                 FG=$COLOR_URGENT_FG
                                 BG=$COLOR_URGENT_BG
-                                INFO='!'
+                                INFO=' !'
                                 ;;
                         esac
                         wm_infos="${wm_infos}^fg(${FG})^bg(${BG})^ca(1, bspc desktop -f ${name})^ca(2, bspc window -d ${name})^ca(3, bspc window -d ${name} -f)${INFO}${name}${PADDING}^ca()^ca()^ca()"
