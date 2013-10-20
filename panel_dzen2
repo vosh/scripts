@@ -42,7 +42,7 @@ while read -r line ; do
                                 # focused occupied desktop
                                 FG=$COLOR_FOCUSED_OCCUPIED_FG
                                 BG=$COLOR_FOCUSED_OCCUPIED_BG
-                                INFO=' ^p(-2;-1)^ro(3x3)^p()'
+                                INFO=' ^p(-2;-1)^ro(4x4)^p()'
                                 ;;
                             F*)
                                 # focused free desktop
@@ -60,7 +60,7 @@ while read -r line ; do
                                 # occupied desktop
                                 FG=$COLOR_OCUPPIED_FG
                                 BG=$COLOR_OCUPPIED_BG
-                                INFO=' ^p(-2;-1)^ro(3x3)^p()'
+                                INFO=' ^p(-2;-1)^ro(4x4)^p()'
                                 ;;
                             f*)
                                 # free desktop
